@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/* CSS js_adv.v1.0.css last modified 10/10/25 */
+
+/* ゲーム画面の外枠 */
+div.js_game {
+    margin: 0px;
+    padding: 20px auto;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', Verdana, sans-serif;
+}
+
+/* ゲーム画面のDOM要素 */
+div.disp {
+    margin: 20px auto;
+    padding: 0px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background-color: #000;
+    border: none;
+}
+
+/* モーダルウィンドウ */
+div.modal {
+    margin: 20px auto;
+    padding: 0px;
+    overflow: hidden;
+    z-index: 210;
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #000;
+    border: none;
+}
+
+.clear_float {
+    clear: both;
+}
+
+/* 各種ウィンドウのフレーム */
+.window1 {
+    margin: 0px;
+    padding: 0px;
+    background-color: #CBCBCC;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FDFDFE #9A9A9B #9A9A9B #FDFDFE;
+}
+
+.window2 {
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px #818182;
+}
+
+.window3 {
+    margin: 0px;
+    padding: 0px;
+    background-color: #E2E2E3;
+    padding: 1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FDFDFE #DADADB #DADADB #FDFDFE;
+}
+
+/* タイトルウィンドウ外枠 */
+.title_win {
+    margin: 0px;
+    padding: 0px;
+    width: 280px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Verdana, arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 200;
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    border: solid 1px #616162;
+    cursor: default;
+}
+
+/* タイトルウィンドウのテキスト部分 */
+.title_text {
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+    color: #ADD8E6;
+    overflow: hidden;
+    height: 24px;
+    background-color: #000;
+    border: solid 1px #818182;
+}
+
+/* 警告ウィンドウ外枠 */
+.warn_win {
+    margin: 0px;
+    padding: 0px;
+    width: 540px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Verdana, arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    z-index: 200;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    border: solid 1px #616162;
+    cursor: default;
+}
+
+/* 警告ウィンドウのテキスト部分 */
+.warn_text {    
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+    overflow: hidden;
+    color: #F00;
+    height: 24px;
+    background-color: #000;
+    border: solid 1px #818182;
+}
+
+/* メッセージウィンドウ外枠 */
+.main_win {
+    margin: 0px;
+    padding: 0px;
+    width: 620px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Verdana, arial, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    z-index: 200;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    border: solid 1px #000000;
+    cursor: pointer;
+}
+
+/* メッセージウィンドウのテキスト部分 */
+.main_text {
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    overflow: hidden;
+    height: 100px;
+    background-color: #000;
+    border: solid 1px #818182;
+}
+
+/* 問題文のテキスト部分 */
+.question {
+    margin: 0px;
+    padding: 0px;
+    width: 592px;
+    color: #FFF;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: transparent;
+}
+
+/* 選択肢のテキスト部分 */
+.answer {
+    margin: 0px;
+    padding: 0px;
+    width: 592px;
+    color: #FFF;
+    text-indent: 15px;
+    position: absolute;
+    top: 50px;
+    left: 14px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* 二者択一のテキスト部分 */
+table.conf_table {
+    border-collapse: collapse;
+    border: none;
+}
+table.conf_table td.ok, table.conf_table td.cancel {
+    padding: 5px 15px;
+    color: #FF8C00;
+    background-color: #000;
+    
+}
+
+/* 顔グラフィック用のフレーム */
+.char_img {
+    margin: 0px;
+    position: absolute;
+    width: auto;
+    border: none;
+}
+
+/* 顔グラフィックのIMG要素スタイル　初期サイズは96×96 */
+.img_frm {
+    margin: 0px;
+    padding: 0px;
+    width: 96px;
+    height: 96px;
+    z-index: 200;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    overflow: hidden;
+    border: solid 1px #616162;
+    background-color: #FFF;
+}
+
+/* メッセージの話者表示部分 */
+.char_name {
+    margin: 0px;
+    padding: 0px;
+    width: 592px;
+    color: #FFF;
+    overflow: hidden;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: transparent;
+}
+
+/* メッセージ部分のスタイル */
+.message {
+    margin: 0px;
+    padding: 0px;
+    height: 120px;
+    width: 592px;
+    color: #FFF;
+    overflow: hidden;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background-color: transparent;
+}
+
+/* ウィンドウの透過が顔グラフィックに継承されるため */
+.black_sheet {
+    margin: 0px;
+    padding: 0px;
+    width: 98px;
+    height: 98px;
+    z-index: 150;
+    position: absolute;
+    top: 226px;
+    left: 36px;
+    background-color: #000;
+}
+
+/* メッセージ右下に表示されるアイコン */
+.page_next {
+    margin: 0px;
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+    z-index: 250;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(http://wiz-code.digick.jp/image/icon/enter06.png);
+}
+
+/* ノベルウィンドウ外枠 */
+.text_win {
+    margin: 0px;
+    padding: 0;
+    color: #FFF;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Verdana, arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    width: 300px;
+    height: 100px;
+    z-index: 10;
+    position: absolute;
+    top: 350px;
+    /*left: 40px;*/
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    opacity: 1.0;
+    border-color: #000;
+}
+
+/* ノベルウィンドウのテキスト部分 */
+.passage {
+    margin: 0px;
+    padding: 10px 15px 0px;
+    position: relative;
+    color: #FFF;
+    overflow: hidden;
+}
+
+/* 背景画像のフレーム */
+.bg_frm {
+    margin: 0px;
+    padding: 0px;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    z-index: 5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #FFF;
+}
+
+/* 背景画像のIMG要素スタイル */
+img.bg_img {
+    margin: 0px;
+    width: auto;
+    border: none;
+    background-color: #FFF;
+}
+
+/* 音楽再生の要素を格納 */
+.track {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+
+/* 画像のフレーム */
+.fg_frm {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+}
+
+/* 画像のIMG要素スタイル */
+img.fg_img {
+    margin: 0px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+/* ダイアログウィンドウの外枠 */
+.dialog_win {
+    margin: 0px;
+    padding: 0px;
+    width: 450px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Verdana, arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    z-index: 250;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    border: solid 1px #616162;
+    cursor: default;
+}
+
+/* ダイアログウィンドウのテキスト部分 */
+.dialog_text {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+    overflow: hidden;
+    height: 110px;
+    background-color: #000;
+    border: solid 1px #818182;
+}
+
+.dialog_text input {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.dialog_text input.input_text {
+    margin-bottom: 20px;
+    border: 1px solid #3b6e22;
+    width: 410px;
+    background-color: #F0F8FF;
+}
+
+.dialog_text label {
+    padding: 0px;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dialog_text input.input_ok {
+    color: #32CD32;
+    font-weight: bold;
+    width: 120px;
+}
+
+.dialog_text input.input_cancel {
+    margin-left: 10px;
+    color: #FF1493;
+    font-weight: bold;
+    width: 120px;
+}
+
+/* ロード中アイコンの表示 */
+img.loading {
+    margin: 0px;
+    z-index: 300;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 180px;
+    left: 120px;
+    border: none;
+}
+
+/* 音楽プレイヤーアイコンの表示 */
+div.audio {
+    width: 32px;
+    height: 32px;
+    z-index: 300;
+    position: absolute;
+    left: 595px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.quiz_font01 {
+    color: #FFF;
+    font-size: 20px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Verdana, arial, sans-serif;
+}

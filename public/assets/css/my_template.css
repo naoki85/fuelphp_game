@@ -1,0 +1,151 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    /*background: black;*/
+}
+
+table{
+    margin-right : auto;
+    margin-left : auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    width : auto;
+}
+
+th.t_top {
+    border-top: #be1309 4px solid;
+}
+th {
+    border-bottom: #e3e3e3 1px dotted;
+    text-align: left;
+    padding: 10px;
+    font-weight: normal;
+}
+td.t_top {
+    border-top: #b3b3b3 4px solid;
+}
+td {
+    border-bottom: #e3e3e3 1px dotted;
+    text-align: left;
+    padding: 10px;
+}
+tr:hover {
+    background: #3D80DF;
+    color: #FFFFFF;
+}
+
+#content h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+#chara {
+    margin-top: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.button_wrapper {
+    text-align: center;
+}
+
+/* ボタン① */
+.btn1 {
+    background: -moz-linear-gradient(top,#BFD9E5, #3D95B7 50%,#0080B3 50%,#0099CC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#BFD9E5), color-stop(0.5,#3D95B7), color-stop(0.5,#0080B3), to(#0099CC));
+    color: #FFF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    /*border: 1px solid #0099CC;*/
+    -moz-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+/* ボタン② */
+.btn2 {
+    margin: 10px, 0;
+    width: 200px;
+    font-size: 16px;
+    color: black;
+
+    background: -moz-linear-gradient(top,#BFD9E5, #3D95B7 50%,#0080B3 50%,#0099CC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#BFD9E5), color-stop(0.5,#3D95B7), color-stop(0.5,#0080B3), to(#0099CC));
+    color: #FFF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    /*border: 1px solid #0099CC;*/
+    -moz-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+/* ボタン③ */
+.btn3 {
+    background: -moz-linear-gradient(top,#FFF 0%,#E6E6E6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    color: #111;
+    -moz-box-shadow: inset 1px 1px 1px rgba(000,000,000,0.3);
+    -webkit-box-shadow: inset 1px 1px 1px rgba(000,000,000,0.3);
+    width: 100px;
+    padding: 10px 0;
+}
+
+/* ボタン④ */
+.btn4 {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 16px;
+    color: black;
+
+    background: -moz-linear-gradient(top,#BFD9E5, #3D95B7 50%,#0080B3 50%,#0099CC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d95b7), color-stop(0.5,#3d95b7), color-stop(0.5,#3d95b7), to(#3d95b7));
+    color: #FFF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    /*border: 1px solid #0099CC;*/
+    -moz-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+/* ボタン⑤ */
+.btn5 {
+    position: absolute;
+    top: 420px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 16px;
+    color: black;
+
+    background: -moz-linear-gradient(top,#BFD9E5, #3D95B7 50%,#0080B3 50%,#0099CC);
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d95b7), color-stop(0.5,#3d95b7), color-stop(0.5,#3d95b7), to(#3d95b7));
+    color: #FFF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    /*border: 1px solid #0099CC;*/
+    -moz-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 1px 1px 1px rgba(000,000,000,0.3),inset 0px 0px 3px rgba(255,255,255,0.5);
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+.comment {
+    font-size: 20px;
+    margin: 10px auto;
+}
+

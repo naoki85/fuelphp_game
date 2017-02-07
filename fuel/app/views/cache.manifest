@@ -1,0 +1,20 @@
+CACHE MANIFEST
+
+# Version: YYYYMMDDHHMM
+
+CACHE:
+
+# Desktop Icon
+apple-touch-icon.png
+
+# HTML
+
+# CSS
+css/iphone.css
+
+# JavaScript
+http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js
+js/iphone.js
+
+# Images
+
